@@ -1,7 +1,9 @@
 import { useCounter } from "../contexts/CounterContext";
+import { useUsers } from "../hooks/useUsers";
 
 function Page2() {
   const { counter, increment, decrement, reset } = useCounter();
+  const { users, isLoading } = useUsers();
 
   return (
     <div>
@@ -12,6 +14,12 @@ function Page2() {
         <button onClick={decrement}>Decrement</button>
         <button onClick={reset}>Reset</button>
       </div>
+
+      {isLoading ? (
+        <span>Please wait...</span>
+      ) : (
+        <pre>{JSON.stringify(users, null, 2)}</pre>
+      )}
     </div>
   );
 }
