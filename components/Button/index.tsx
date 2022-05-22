@@ -1,10 +1,10 @@
-import { styled } from "@stitches/react";
+import { styled } from "../../styles/stitches.config";
 import { FC, HTMLAttributes } from "react";
 
 const ButtonStyle = styled("button", {
-  backgroundColor: "gainsboro",
+  backgroundColor: "$gray400",
   borderRadius: "9999px",
-  fontSize: "13px",
+  fontSize: "$md",
   padding: "10px 15px",
   "&:hover": {
     backgroundColor: "lightgray",
