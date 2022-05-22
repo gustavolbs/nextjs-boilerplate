@@ -1,5 +1,30 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Libs Installed and Ready to Use
+
+- @faker-js/faker (^6.3.1)
+- @radix-ui/colors (^0.1.8)
+- @radix-ui/react-collapsible (^0.1.6)
+- @radix-ui/react-icons (^1.1.1)
+- @stitches/react (^1.2.8)
+- @testing-library/dom (^8.13.0)
+- @testing-library/jest-dom (^5.16.4)
+- @testing-library/react (^13.2.0)
+- @testing-library/user-event (^14.2.0)
+- axios (^0.27.2)
+- cypress (^9.6.1)
+- eslint (8.16.0)
+- eslint-config-next (12.1.6)
+- jest (^28.1.0)
+- jest-environment-jsdom (^28.1.0)
+- miragejs (^0.1.44)
+- next (12.1.6)
+- react (18.1.0)
+- react-dom (18.1.0)
+- start-server-and-test (^1.14.0)
+- swr (^1.3.)
+- typescript (4.6.4)
+
 ## Getting Started
 
 First, run the development server:
