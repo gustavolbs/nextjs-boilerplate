@@ -5,17 +5,18 @@ import routes from './routes';
 import models from './models';
 import seeds from './seeds';
 
-const config = (environment) => {
+const config = (environment: string) => {
   const config = {
     environment,
     factories,
+    fixtures,
     models,
     routes,
     seeds,
   };
 
   if (Object.keys(fixtures).length) {
-    config['fixtures'] = fixtures;
+    config.fixtures = fixtures;
   }
 
   return config;

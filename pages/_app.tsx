@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { makeServer } from "../miragejs/server";
 import type { AppProps } from "next/app";
+import Providers from "../contexts/Providers";
 
 if (process.env.NODE_ENV === "development") {
   // Mirage JS code will ever reach your production build.
@@ -8,7 +9,11 @@ if (process.env.NODE_ENV === "development") {
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <Providers>
+      <Component {...pageProps} />
+    </Providers>
+  );
 }
 
 export default MyApp;
