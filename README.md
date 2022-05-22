@@ -7,6 +7,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - @radix-ui/react-collapsible (^0.1.6)
 - @radix-ui/react-icons (^1.1.1)
 - @stitches/react (^1.2.8)
+- @storybook/react: (^6.5.3),
 - @testing-library/dom (^8.13.0)
 - @testing-library/jest-dom (^5.16.4)
 - @testing-library/react (^13.2.0)
