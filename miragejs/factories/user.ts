@@ -10,7 +10,7 @@ import { Factory } from 'miragejs';
  */
 import { faker } from '@faker-js/faker';
 
-export default {
+const userFactory = {
   user: Factory.extend({
     name() {
       return faker.fake('{{name.findName}}');
@@ -21,10 +21,7 @@ export default {
     mobile() {
       return faker.fake('{{phone.phoneNumber}}');
     },
-    afterCreate(user, server) {
-      const messages = server.createList('message', randomNumber(10), { user });
-
-      user.update({ messages });
-    },
   }),
 };
+
+export default userFactory;

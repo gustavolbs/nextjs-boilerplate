@@ -10,7 +10,9 @@ import message from './message';
  * destructure what's coming from users and the same should
  * be done for all future factories
  */
-export default {
+const factories = {
   ...user,
   ...message,
 };
+
+export default factories;

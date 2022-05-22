@@ -11,7 +11,8 @@ import { Model, hasMany, belongsTo } from 'miragejs';
  *
  * Mirage JS guide on Relationships: https://miragejs.com/docs/main-concepts/relationships/
  */
-export default {
+
+const models = {
   user: Model.extend({
     messages: hasMany(),
   }),
@@ -20,3 +21,5 @@ export default {
   }),
   product: Model,
 };
+
+export default models;

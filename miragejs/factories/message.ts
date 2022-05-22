@@ -8,7 +8,7 @@ import { Factory } from 'miragejs';
  */
 import { faker } from '@faker-js/faker';
 
-export default {
+const messageFactory = {
   message: Factory.extend({
     content() {
       return faker.fake('{{lorem.paragraph}}');
@@ -19,3 +19,5 @@ export default {
     },
   }),
 };
+
+export default messageFactory;

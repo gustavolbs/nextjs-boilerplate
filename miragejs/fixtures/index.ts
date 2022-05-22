@@ -4,4 +4,6 @@
 
 import products from './products.json';
 
-export default { products };
+const fixtures = { products };
+
+export default fixtures;
