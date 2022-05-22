@@ -15,6 +15,9 @@ export default {
     name() {
       return faker.fake('{{name.findName}}');
     },
+    age() {
+      return faker.datatype.number({ min: 10, max: 100 });
+    },
     mobile() {
       return faker.fake('{{phone.phoneNumber}}');
     },

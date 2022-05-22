@@ -1,24 +1,28 @@
+import { Button } from "../components/Button";
+import CollapsibleList from "../components/CollapsibleList";
+
 import { useCounter } from "../contexts/CounterContext";
+
 import { useUsers } from "../hooks/useUsers";
 
 function Page2() {
   const { counter, increment, decrement, reset } = useCounter();
-  const { users, isLoading } = useUsers();
+  const { users: data, isLoading } = useUsers();
 
   return (
     <div>
       <h1>Hello World</h1>
       <div className="counter">
         <span>Counter: {counter}</span>
-        <button onClick={increment}>Increment</button>
-        <button onClick={decrement}>Decrement</button>
-        <button onClick={reset}>Reset</button>
+        <Button onClick={increment}>Increment</Button>
+        <Button onClick={decrement}>Decrement</Button>
+        <Button onClick={reset}>Reset</Button>
       </div>
 
       {isLoading ? (
         <span>Please wait...</span>
       ) : (
-        <pre>{JSON.stringify(users, null, 2)}</pre>
+        <CollapsibleList data={data.users} title="Users" />
       )}
     </div>
   );
