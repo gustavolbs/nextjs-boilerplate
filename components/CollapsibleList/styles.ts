@@ -18,6 +18,7 @@ export const Text = styled("span", {
   color: violet.violet11,
   fontSize: 15,
   lineHeight: "25px",
+  fontFamily: "sans-serif",
 });
 
 export const IconButton = styled("button", {

@@ -14,9 +14,9 @@ function Page2() {
       <h1>Hello World</h1>
       <div className="counter">
         <span>Counter: {counter}</span>
-        <Button onClick={increment}>Increment</Button>
-        <Button onClick={decrement}>Decrement</Button>
-        <Button onClick={reset}>Reset</Button>
+        <Button label="Increment" onClick={increment} />
+        <Button label="Decrement" onClick={decrement} />
+        <Button label="Reset" onClick={reset} />
       </div>
 
       {isLoading ? (
